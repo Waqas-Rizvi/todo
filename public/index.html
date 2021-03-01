@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input placeholder="Enter Todo" type="text" class="inp" id="inp">
+    <button class="btn" onclick="todo()">Add Todo</button>
+    <button class="btn" onclick="remove()">Delete All</button>
+    <div id="mainList">
+        <div id="wa"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAAqJeaJDnBH4i0Cai0DUH1XrtgHSoZnTg",
+            authDomain: "todo-app-deec8.firebaseapp.com",
+            databaseURL: "https://todo-app-deec8-default-rtdb.firebaseio.com",
+            projectId: "todo-app-deec8",
+            storageBucket: "todo-app-deec8.appspot.com",
+            messagingSenderId: "13285062963",
+            appId: "1:13285062963:web:7d1d3ba52952fa2b04e646",
+            measurementId: "G-YXF050NS43"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
